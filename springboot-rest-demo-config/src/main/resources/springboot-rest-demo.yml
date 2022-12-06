@@ -1,0 +1,34 @@
+# ===================================================================
+# Spring Boot configuration for the "prod" profile.
+#
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+
+spring:
+    application:
+        name: springboot-rest-demo
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+
+# mangagement endpoint configuration 
+management:
+    endpoints:
+        web:
+            base-path: /monitoring
+            exposure.include: info, health # autorized web endpoints list
+    endpoint:
+        health:
+            show-details: always
+
+# ===================================================================
+# Application specific configuration.
+# ===================================================================
+springboot-rest-demo:
