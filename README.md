@@ -15,10 +15,10 @@ VM Args have to be added
 ```json
         {
             "type": "java",
-            "name": "Launch OneyApp",
+            "name": "DemoRestApplication",
             "request": "launch",
-            "mainClass": "com.oney.prdlgcl.demorest.OneyApp",
-            "projectName": "demo-rest-ws",
-            "vmArgs": "-Dspring.profiles.active=dev -Dspring.config.location=<PATH_TO_PROJECT>\\springboot-rest-demo-config\\src\\main\\resources\\springboot-rest-demo.yml"
+            "mainClass": "org.grostarin.springboot.demorest.DemoRestApplication",
+            "projectName": "springboot-rest-demo-ws",
+            "vmArgs": "-Dspring.profiles.active=dev -Dspring.config.location=<PATH_TO_PROJECT>springboot-rest-demo-config\\src\\main\\resources\\springboot-rest-demo.yml"
         }
 ```
